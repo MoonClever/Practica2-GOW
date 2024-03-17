@@ -14,7 +14,6 @@ class WeaponCell: UITableViewCell {
     
     @IBOutlet weak var weaponImage: UIImageView!
     
-    
     @IBOutlet weak var weaponDescription: UILabel!
     
     override func awakeFromNib() {

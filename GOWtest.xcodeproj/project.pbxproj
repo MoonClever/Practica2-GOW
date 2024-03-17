@@ -73,6 +73,9 @@
 		CED220232B9BE88B007AEFCA /* GamesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesViewController.swift; sourceTree = "<group>"; };
 		CED220252B9BF969007AEFCA /* Weapon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weapon.swift; sourceTree = "<group>"; };
 		CED220292B9BFD57007AEFCA /* WeaponsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponsController.swift; sourceTree = "<group>"; };
+		CEDC05D52BA7429B00878864 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		CEDC05D62BA7429B00878864 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		CEDC05D72BA7429C00878864 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -296,6 +299,7 @@
 				en,
 				Base,
 				it,
+				ru,
 			);
 			mainGroup = CED21FDE2B9BD10B007AEFCA;
 			productRefGroup = CED21FE82B9BD10C007AEFCA /* Products */;
@@ -396,6 +400,7 @@
 				CE4CF7FE2B9CCD3C00B2D20E /* Base */,
 				CE4CF8022B9CCDD000B2D20E /* it */,
 				CECDF1B42BA68D7C00F96E21 /* en */,
+				CEDC05D72BA7429C00878864 /* ru */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -405,6 +410,7 @@
 			children = (
 				CED21FF12B9BD10C007AEFCA /* Base */,
 				CE4CF8002B9CCDCF00B2D20E /* it */,
+				CEDC05D52BA7429B00878864 /* ru */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -414,6 +420,7 @@
 			children = (
 				CED21FF62B9BD10F007AEFCA /* Base */,
 				CE4CF8012B9CCDD000B2D20E /* it */,
+				CEDC05D62BA7429B00878864 /* ru */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";

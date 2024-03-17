@@ -73,9 +73,7 @@ class WeaponsController: UIViewController {
 
     
     @IBOutlet weak var weaponsTableView: UITableView!
-    
-    let CGO = 0
-    let LOCUS = 1
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -102,8 +100,9 @@ extension WeaponsController : UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "weaponCell", for: indexPath) as! WeaponCell
-        cell.weaponLabel.text = arrayWeapons[indexPath.row].name
-        cell.weaponDescription.text = arrayWeapons[indexPath.row].description
+        cell.weaponLabel.text = NSLocalizedString(arrayWeapons[indexPath.row].name, comment: "")
+        cell.weaponImage.image = UIImage(named: arrayWeapons[indexPath.row].poster)
+        cell.weaponDescription.text = NSLocalizedString(arrayWeapons[indexPath.row].description, comment: "")
         return cell
     }
     

@@ -22,10 +22,10 @@ class HomeViewController: UITableViewController {
                 segue:"weaponsSegue")
             , MenuOption(
                 title:"menu.option.characters",
-                image:"person.crop.rectangle.stack.fill",
+                image:"person.fill",
                 segue:"charactersSegue")
             ,MenuOption(
-                title:"enu.option.merchandise",
+                title:"menu.option.merchandise",
                 image:"shippingbox.fill",
                 segue:"merchandiseSegue")
         ]

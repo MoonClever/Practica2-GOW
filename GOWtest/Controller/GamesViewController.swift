@@ -25,6 +25,7 @@ class GamesViewController: UIViewController {
     
     
     @IBAction func leftSwipeDone(_ sender: Any) {
+
         if gamePosterPageControl.currentPage == gamePosters.count-1  {
                     gamePosterPageControl.currentPage = 0
                     gamePosterImage.image = UIImage(named: String(gamePosters[gamePosterPageControl.currentPage]))
@@ -36,8 +37,20 @@ class GamesViewController: UIViewController {
         
         gamePosterPageControl.setIndicatorImage(UIImage(named:  "gow_logo"), forPage: gamePosterPageControl.currentPage)
         
+    }
+    
+    
+    @IBAction func rightSwipeDone(_ sender: Any) {
+        if gamePosterPageControl.currentPage == 0  {
+                    gamePosterPageControl.currentPage = gamePosters.count-1
+                    gamePosterImage.image = UIImage(named: String(gamePosters[gamePosterPageControl.currentPage]))
+                }
+                else{
+                    gamePosterPageControl.currentPage = gamePosterPageControl.currentPage - 1
+                    gamePosterImage.image = UIImage(named: String(gamePosters[gamePosterPageControl.currentPage]))
+                }
         
-        
+        gamePosterPageControl.setIndicatorImage(UIImage(named:  "gow_logo"), forPage: gamePosterPageControl.currentPage)
     }
     
     
